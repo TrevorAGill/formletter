@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="well">
+        <h1>Form Letter</h1>
+          <div>
+            <form id="formOne">
+              <div class="form-group">
+                <label for="preferredTitle">Their preferred title</label>
+                <input id="preferredTitle" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="firstName">First name</label>
+                <input id="firstName" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last name</label>
+                <input id="lastName" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="donationAmount">Donation Amount</label>
+                <input id="donationAmount" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="donationUse">Donation Use</label>
+                <input id="donationUse" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="eventName">Event Name</label>
+                <input id="eventName" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="person2">Your Name</label>
+                <input id="person2" class="form-control" type="text">
+              </div>
+
+              <button type="submit" class="btn">Generate Letter</button>
+            </form>
+          </div>
+      </div>
+      <div class="well">
+        <div id="story">
+          <h1>Thank You!</h1>
+          <p>
+          Dear <span class="preferredTitle"></span> <span class="firstName"></span> <span class="lastName"></span><br>Thank you for attending our most recent event, <span class="eventName"></span>. Your generous donation of <span class="donationAmount"></span> will help us to <span class="donationUse"></span>. We realize that without donors like you we would never be able to hold events like <span class="eventName"></span>. Thanks again very much 4 the dollas! <br>Sincerely,<br><em><span class="person2"></span></em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
